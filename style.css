@@ -7,8 +7,9 @@
 .yesToSlide_Logo > img {
   width: 108px;
   height: 40px;
-  padding-left: 10px;
+  margin-left: 10px;
 }
+/*  comment   */
 .usercomm {
   display: flex;
   justify-content: space-between;
@@ -29,10 +30,20 @@
 }
 .username,
 .comment {
-  font-size: 16px;
+  font-size: 1em;
   color: #ffffff;
   margin: 0px 5px;
 }
+.username {
+  width: max-content;
+}
+.comment {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+/*  side menu   */
 .icons {
   display: flex;
   height: 34px;
@@ -45,26 +56,22 @@
 }
 .moveslide {
   width: 69px;
-  height: 34px;
   background: transparent url("icon/bg_slideBar.svg") 0% 0% no-repeat
     padding-box;
   display: flex;
 }
 .moveslide > button {
   width: 34px;
-  height: 34px;
   background: transparent;
   border: transparent;
 }
 .showmode > button,
 .setting > button {
-  height: 34px;
   background: transparent;
   border: none;
 }
 .menu {
   width: 118px;
-  height: 34px;
   margin-left: 20px;
   background: transparent url("icon/bg_menuBar.svg") 0% 0% no-repeat padding-box;
   display: flex;

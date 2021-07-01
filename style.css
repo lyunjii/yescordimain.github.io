@@ -1,10 +1,12 @@
 * {
   padding: 0px;
   margin: 0px;
+  box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
 .yesToSlide_Logo > img {
   width: 108px;
+  height: 40px;
   padding-left: 10px;
 }
 .usercomm {
@@ -29,7 +31,7 @@
 .comment {
   font-size: 16px;
   color: #ffffff;
-  padding: 0px 8px;
+  margin: 0px 5px;
 }
 .icons {
   display: flex;
@@ -75,7 +77,33 @@
   border: none;
 }
 header {
+  width: 100%;
+  padding: 20px;
+  position: absolute;
+  z-index: 1;
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+}
+.fullimg {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+}
+.fullimg > img {
+  width: 100%;
+  object-fit: cover;
+  filter: blur(50px);
+}
+.bgimg {
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.bgimg > img {
+  height: 100vh;
+  object-fit: contain;
 }

@@ -6,7 +6,6 @@
 }
 .yesToSlide_Logo > img {
   width: 153px;
-  margin-left: 10px;
 }
 /*  comment   */
 .usercomm {
@@ -47,7 +46,7 @@
 .icons {
   display: flex;
   height: 34px;
-  margin: 7px 0px;
+  margin: 7px 13px 0px 0px;
 }
 .slidemenu {
   display: flex;
@@ -73,7 +72,7 @@
 }
 .menu {
   width: 118px;
-  margin-left: 20px;
+  margin-left: 1.25rem;
   background: transparent url("icon/bg_menuBar.svg") 0% 0% no-repeat padding-box;
   display: flex;
   justify-content: space-around;
@@ -86,7 +85,7 @@
 }
 header {
   width: 100%;
-  padding: 13px 20px;
+  padding: 13px 7px;
   position: absolute;
   z-index: 1;
   display: flex;
